@@ -1,0 +1,1393 @@
+/*
+  ============================================================
+   ! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
+
+   and
+
+   BOX-SIZING
+
+   and
+
+   CLEARFIX
+  ============================================================
+*/
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption,
+figure,
+main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details,
+menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*
+============================================================
+GENERAL STYLING FOR PAGES THAT COME UP OFTEN
+============================================================
+*/
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway", "Lora", sans-serif;
+}
+
+body {
+    font-size: 2.5rem;
+}
+
+.line {
+    background-color: rgb(100, 166, 4);
+    width: 7rem;
+    height: 0.4rem;
+    left: 50%;
+    transform: translatex(-50%);
+    position: absolute;
+}
+
+.recipesContainer h2,
+.restaurantsMainContent h2,
+.testimonials h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 0.6em 0;
+}
+
+.recipesContainer p,
+.restaurantsMainContent p,
+.blogPost p {
+    font-size: 1.3rem;
+    font-family: Lora;
+    color: #666666;
+    margin: 5.5em 0 3em 0;
+    line-height: 2.4rem;
+}
+
+* {
+    text-decoration-line: none;
+}
+
+a:hover,
+button {
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+
+/*
+============================================================
+HEADER
+============================================================
+*/
+
+.homeHeader {
+    width: 100%;
+    height: 82.5vh;
+    background-image: url("../../../assets/images/home-1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.headerContainer {
+    padding: 0.75% 2% 0 2%;
+    margin: 0 auto;
+}
+
+.headerContainer h1 {
+    margin: 0;
+    float: left;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.headerContainer nav {
+    float: right;
+    display: inline-block;
+    width: 75%;
+    padding-top: 0.5%;
+}
+
+.headerContainer nav ul {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.headerContainer .navItems li {
+    margin-right: 2.5%;
+}
+
+.headerContainer nav ul,
+.headerContainer nav ul li {
+    text-align: right;
+    display: inline-block;
+}
+
+.navItems li:hover,
+.fa-shopping-bag:hover,
+.fa-search:hover {
+    color: rgb(100, 166, 4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navItems,
+.navIcons {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.navItems {
+    width: 90%;
+    margin-right: -2%;
+}
+
+.navIcons {
+    width: 10%;
+}
+
+.navIcons li:last-child {
+    margin-left: 35%;
+}
+
+.navIcons li:first-child {
+    position: relative;
+}
+
+.fa-shopping-bag,
+.fa-search {
+    font-size: 130%;
+}
+
+.checkoutNumber {
+    width: 92.5%;
+    height: 92.5%;
+    position: absolute;
+    bottom: -45%;
+    right: -45%;
+}
+
+
+/*
+============================================================
+RECIPES
+============================================================
+*/
+
+.recipesContainer {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+}
+
+.recipesContainer>div {
+    float: left;
+    width: 50%;
+    position: absolute;
+}
+
+.recipesContainer div:first-child {
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%);
+    padding: 0 7.5%;
+}
+
+.recipesContainer>div:last-child {
+    left: 50%;
+    height: 100%;
+}
+
+.recipesContainer div:last-child img {
+    width: 100%;
+    height: 100%;
+}
+
+.recipesContainer h5,
+.commentForm .submitButton {
+    font-family: "Raleway";
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #64a604;
+    width: 20rem;
+    padding: 1em 0;
+    border: 1px solid #5b9903;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.recipesContainer h5:hover,
+.submitButton:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #5b9903;
+    background-color: rgb(221, 237, 154);
+    border: 1px solid rgb(221, 237, 154);
+}
+
+
+/*
+============================================================
+DISH TYPES
+============================================================
+*/
+
+.dishTypesContainer {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.dishTypesContainer>div {
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.dishTypesContainer div img,
+.dishTypesContainer div:last-child ul {
+    width: 100%;
+    height: 100%;
+}
+
+.dishTypesContainer>div:last-child {
+    background-color: #f2f2f2;
+    left: 50%;
+}
+
+.dishTypesContainer div:last-child ul {
+    margin: 0;
+    padding: 7.5%;
+}
+
+.dishTypesContainer li {
+    float: left;
+    height: calc(100% / 3);
+    width: 50%;
+    list-style-type: none;
+    padding: 3% 0.5% 0 3%;
+}
+
+.dishTypesContainer p {
+    margin: 0;
+    color: #999999;
+    font-family: "Lora";
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.dishTypesContainer h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.dishTypesContent,
+.dishIcon {
+    float: left;
+}
+
+.dishTypesContent {
+    width: 80%;
+}
+
+.dishIcon {
+    width: 17.5%;
+}
+
+
+/*
+============================================================
+RESTAURANTS
+============================================================
+*/
+
+.restaurants {
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+.restaurantsContainer {
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.restaurantsMainContent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-40%);
+}
+
+.restaurantsMainPic {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.logo {
+    position: absolute;
+    top: -116px;
+    right: -80px;
+}
+
+.restaurantsContainer img {
+    width: 100%;
+}
+
+.restaurantsMainContent p {
+    margin: 4.25em 0 3.5em 0;
+}
+
+
+/*
+============================================================
+FOOD HIGHLIGHTS
+============================================================
+*/
+
+.foodHighlights {
+    width: 100%;
+    height: 70vh;
+}
+
+.foodHighlightsContainer,
+.foodHighlightsContainer img,
+.foodHighlightsContainer ul {
+    width: 100%;
+    height: 100%;
+}
+
+.foodHighlightsContainer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.foodHighlightsContainer li {
+    height: 50%;
+    float: left;
+    display: inline-block;
+    width: calc(100% / 3);
+    list-style-type: none;
+}
+
+
+/*
+============================================================
+TESTIMONIALS
+============================================================
+*/
+
+.testimonials {
+    width: 100%;
+    height: 70vh;
+    background-color: #dded9a;
+    text-align: center;
+}
+
+.testimonialsContainer {
+    height: 100%;
+    max-width: 52.5%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonialsContent {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.testimonials p {
+    margin: 8% 0 7% 0;
+    font-family: "Lora";
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    position: absolute;
+    color: #ffffff;
+    font-size: 175%;
+}
+
+.fa-quote-left {
+    top: -2rem;
+    left: -9rem;
+}
+
+.fa-quote-right {
+    bottom: -2rem;
+    right: -9rem;
+}
+
+.testimonials blockquote {
+    margin: 0;
+    position: relative;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    margin: 2%;
+    color: whitesmoke;
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/*
+============================================================
+CONTACT
+============================================================
+*/
+
+.contact {
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 55vh;
+}
+
+.contactContainer {
+    max-width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contactContent {
+    width: 100%;
+    height: 100%;
+    padding: 8% 0;
+}
+
+.contactInfo,
+.recentPosts,
+.subscription {
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 0 5%;
+}
+
+.contactInfo {
+    padding-left: 0;
+}
+
+.subscription {
+    padding-right: 0;
+}
+
+.contactInfo h1 {
+    margin: 0 0 5% 0;
+    color: #64a604;
+    font-size: 3.8rem;
+}
+
+.contact h3 {
+    margin: 0 0 3.8rem 0;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.recentPosts li,
+.contact p {
+    list-style-type: none;
+    font-family: "Lora";
+    color: #999999;
+    line-height: 2.75rem;
+    font-size: 1.40rem;
+    border-bottom: 1px solid rgb(71, 71, 71);
+    padding: 0.9rem 0;
+}
+
+.contact p:last-child,
+.recentPosts li:last-child,
+.subscription p {
+    border-bottom: none;
+}
+
+.contact p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.recentPosts ul {
+    padding: 0;
+}
+
+.signUp {
+    width: 100%;
+    padding: 0.9rem 0;
+    height: 20%;
+}
+
+.signUp button,
+.signUp input {
+    float: left;
+    height: 100%;
+}
+
+.signUp button {
+    font-size: 85%;
+    width: 20%;
+    color: white;
+    background-color: rgb(100, 166, 4);
+    border: none;
+    font-family: none;
+    line-height: 0;
+}
+
+.signUp button:hover {
+    transition: 0.3s;
+    background-color: rgb(221, 237, 154);
+    color: rgb(100, 166, 4);
+}
+
+.signUp input {
+    width: 80%;
+    color: #999999;
+    font-family: "PlayfairDisplay";
+    font-size: 1.6rem;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    padding-left: 2rem;
+}
+
+.signUp input:focus {
+    transition: 0.1s;
+    color: rgb(204, 204, 204);
+}
+
+.socialMedia {
+    border-top: 1px solid rgb(71, 71, 71);
+    padding: 1.4rem 0 0 0;
+}
+
+.socialMedia li {
+    font-size: 80%;
+    float: left;
+    list-style-type: none;
+    margin: 0 1.25rem;
+}
+
+.socialMedia li a {
+    color: white;
+}
+
+.socialMedia a:hover {
+    color: rgb(100, 166, 4);
+    transition: 0.3s;
+}
+
+.socialMedia li:first-child {
+    margin-left: 0;
+}
+
+.socialMedia li:last-child {
+    margin-right: 0;
+}
+
+
+/*
+============================================================
+FOOTER
+============================================================
+*/
+
+.homeFooter {
+    width: 100%;
+    height: 6vh;
+    background-color: #252525;
+}
+
+.homeFooterContainer {
+    max-width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.homeFooterContent {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.homeFooterContent p {
+    margin: 0;
+}
+
+.homeFooterContent span {
+    color: #64a604;
+}
+
+.homeFooterContent span:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+
+/*
+============================================================
+BLOG: HEADER
+============================================================
+*/
+
+.blogHeader {
+    width: 100%;
+    height: 55vh;
+    background-image: url("../../../assets/images/blog-1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*
+============================================================
+BLOG: BLOG CONTENT (BLOG POST)
+============================================================
+*/
+
+.blogContent {
+    width: 100%;
+    background-color: white;
+}
+
+.blogContentContainer {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+.blogPost {
+    width: 100%;
+}
+
+.blogPost h2,
+.blogPost h5,
+.blogPost h4,
+.blogPost ul {
+    margin: 0;
+    padding: 0;
+}
+
+.blogPost h5,
+.singleRelatedPost h5,
+.blogComments h5 {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.blogPost h2 {
+    margin-bottom: 0.75%;
+}
+
+.blogPost p {
+    margin: 3em 0 0 0;
+}
+
+.blogPost>div,
+.blogRelatedPosts,
+.blogComments {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 1.5em 0;
+}
+
+.blogPost>div:first-child {
+    padding-top: 0;
+}
+
+.blogTags li,
+.blogSocialMedia li,
+.blogPost ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.blogTags,
+.blogSocialMedia {
+    font-size: 1.3rem;
+}
+
+.blogTags li,
+.blogSocialMedia li,
+.blogSocialMedia a {
+    color: rgb(183, 183, 183);
+    font-weight: 400;
+}
+
+.blogTags li:first-child {
+    margin-left: 0.5%;
+}
+
+.blogSocialMedia li {
+    margin: 0 1%;
+}
+
+.blogTags li::after {
+    content: ",";
+}
+
+.blogTags li:last-child::after {
+    content: none;
+}
+
+.blogPost>div:nth-child(2) h4:first-child {
+    margin-bottom: 2em;
+}
+
+
+/*
+============================================================
+BLOG: BLOG CONTENT (BLOG AUTHOR)
+============================================================
+*/
+
+.blogAuthor {
+    height: 30vh;
+    width: 100%;
+}
+
+.blogAuthorPic,
+.blogAuthorInfo {
+    float: left;
+    height: 100%;
+}
+
+.blogAuthorPic {
+    width: 15%;
+    margin-right: 3%;
+}
+
+.blogAuthorPic img {
+    height: 100%;
+    width: 100%;
+}
+
+.blogAuthorInfo {
+    position: relative;
+    width: 82%;
+    background-color: rgb(242, 242, 242);
+}
+
+.blogAuthorInfoContent {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 100%;
+    padding: 0 5%;
+}
+
+.blogAuthorInfoContent h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.blogAuthorInfoContent p {
+    margin-top: 2em;
+}
+
+
+/*
+============================================================
+BLOG: BLOG CONTENT (BLOG RELATED POSTS)
+============================================================
+*/
+
+.blogRelatedPosts {
+    width: 100%;
+}
+
+.blogRelatedPosts h3,
+.blogComments h3 {
+    font-size: 1.65rem;
+    margin: 0 0 2em 0;
+    font-weight: 900;
+}
+
+.singleRelatedPost {
+    float: left;
+    width: calc(94% / 3);
+    margin: 0 3% 0 0;
+}
+
+.singleRelatedPost:last-child {
+    margin-right: 0;
+}
+
+.singleRelatedPost img {
+    width: 100%;
+    display: block;
+}
+
+.singleRelatedPost h4 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5em;
+}
+
+.singleRelatedPost h5,
+.blogComments h5 {
+    font-family: "Lora";
+    margin: 0;
+    color: #666666;
+    font-weight: 100;
+}
+
+.singleRelatedPost h5 span {
+    font-weight: 900;
+}
+
+
+/*
+============================================================
+BLOG: BLOG CONTENT (BLOG COMMENTS)
+============================================================
+*/
+
+.blogComments,
+.singleComment,
+.commentForm {
+    width: 100%;
+}
+
+.blogComments {
+    border-bottom: none;
+}
+
+.singleComment {
+    margin-bottom: 2em;
+}
+
+.commentImageContainer,
+.singleCommentContent {
+    float: left;
+}
+
+.commentImageContainer {
+    width: 10%;
+    min-width: 70px;
+}
+
+.singleCommentContent {
+    width: 90%;
+    background-color: rgb(239, 239, 239);
+    color: #666666;
+    padding: 2% 3%;
+    position: relative;
+}
+
+.bubbleTriangle {
+    top: 10%;
+    left: -2rem;
+    position: absolute;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgb(239, 239, 239);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.blogComments h4,
+.blogComments p,
+.blogComments h5 {
+    margin: 0;
+}
+
+.singleCommentContent h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.singleCommentContent h4 span {
+    font-weight: 900;
+}
+
+.singleCommentContent p,
+.singleCommentContent h5 {
+    font-family: "Lora";
+}
+
+.singleCommentContent h4,
+.singleCommentContent p {
+    margin-bottom: 1em;
+}
+
+.singleCommentContent p {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.singleCommentContent h5 {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.commentForm h3 {
+    margin-bottom: 0.5em;
+}
+
+.commentForm h5 {
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.commentForm input,
+.commentForm textarea {
+    padding: 1%;
+    font-size: 1.4rem;
+    font-family: "Lora";
+}
+
+.inputRow1:last-child {
+    margin-right: 0;
+}
+
+.inputRow1 {
+    float: left;
+    width: calc(93% / 3);
+    margin: 0 3.5% 0 0;
+}
+
+.commentForm textArea {
+    resize: none;
+    border: 1px solid lightgrey;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+.blogPost h5 span:hover,
+.blogTags li:hover,
+.blogAuthorInfoContent h4:hover,
+.singleRelatedPost span:hover,
+.singleCommentContent span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.singleRelatedPost h4:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    color: rgb(100, 166, 4);
+}
+
+
+/*
+============================================================
+CONTACT: HEADER
+============================================================
+*/
+
+.contactHeader {
+    width: 100%;
+    height: 55vh;
+    background-image: url("../../../assets/images/contact-1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*
+============================================================
+CONTACT: CONTACT INFORMATION
+============================================================
+*/
+
+.contactPage {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.messageForm,
+.contactDetails {
+    float: left;
+    height: 100%;
+}
+
+.messageForm {
+    width: 60%;
+    background-color: white;
+}
+
+.contactDetails {
+    width: 40%;
+    background-color: rgb(242, 242, 242);
+}
+
+.messageFormContainer,
+.contactDetailsContainer {
+    position: absolute;
+    height: 100%;
+}
+
+.messageFormContainer {
+    width: calc(60% - 12.5%);
+    margin-left: 12.5%;
+}
+
+.contactDetailsContainer {
+    width: calc(40% - 12.5%);
+    margin-right: 12.5%;
+    padding: 0 0 4% 2%;
+}
+
+.messageFormContainer input,
+.messageFormContainer textarea {
+    font-size: 1.3rem;
+    font-family: "Lora";
+    font-weight: 100;
+    background-color: rgb(242, 242, 242);
+    padding: 2%;
+    margin: 0 4% 2em 0;
+    border: none;
+}
+
+.messageFormContainer .messageName,
+.messageFormContainer .messageEmail {
+    float: left;
+    width: calc(50% - 4%);
+}
+
+.messageFormContainer .messageSubject {
+    width: calc(100% - 4%);
+}
+
+.messageFormContainer textarea {
+    width: calc(100% - 4%);
+    resize: none;
+}
+
+.messageFormContainer .submitMessage,
+.submitMessage i {
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border: none;
+    background-color: white;
+    color: #64a604;
+    margin: 0;
+    padding: 0;
+}
+
+.messageFormContainer .submitMessage:hover {
+    cursor: pointer;
+}
+
+.contactPage h3 {
+    font-size: 2.25rem;
+    margin: 4em 0 1.75em 0;
+}
+
+.contactDetailsContainer h4 {
+    font-size: 2rem;
+    margin: 2.5em 0 0.75em 0;
+}
+
+.contactDetailsContainer p {
+    font-family: "Lora";
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    margin: 0;
+    color: #666666;
+}
+
+.contactDetailsContainer p span:first-child {
+    font-weight: 900;
+    color: black;
+}
+
+.contactDetailsContainer p span:last-child,
+.contactDetailsContainer p:last-child {
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+}
+
+.contactDetailsContainer p span:last-child {
+    font-style: italic;
+}
+
+
+/*
+============================================================
+CONTACT: FRUIT IMAGE
+============================================================
+*/
+
+.fruitImage {
+    width: 100%;
+    height: 55vh;
+    background-image: url("../../../assets/images/contact-2.jpeg");
+    background-size: cover;
+    background-position: center;
+}

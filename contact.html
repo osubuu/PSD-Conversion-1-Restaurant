@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- For FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- For CSS Styling-->
+    <link rel="stylesheet" href="assets/stylesheets/css/main.css" lang="css" />
+
+    <!-- For Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
+    <title>Delicious Contact</title>
+</head>
+
+<body>
+    <!-- CONTACT HEADER -->
+    <header class="contactHeader">
+        <div class="headerContainer clearfix">
+            <h1>
+                <a href="index.html">Delicious</a>
+            </h1>
+            <nav>
+                <ul class="navItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="navIcons">
+                    <li>
+                        <i class="fa fa-shopping-bag"></i>
+                        <div>
+                            <img class="checkoutNumber" src="assets/images/home-number-item-in-cart.png" alt="number of items in shopping cart">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-search"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT INFORMATION -->
+    <section class="contactPage clearfix">
+        <form class="messageForm" name="messageForm" action="POST" id="messageForm">
+            <div class="messageFormContainer">
+                <h3>DROP US A LINE</h3>
+                <div class="clearfix">
+                    <input class="messageName" type="text " name="messageName " id="messageName" placeholder="Your Name" autocomplete="off">
+                    <input class="messageEmail" type="email " name="messageEmail" id="messageEmail" placeholder="Your Email" autocomplete="off">
+                </div>
+                <input class="messageSubject" type="text " name="messageSubject" id="messageSubject" placeholder="Subject" autocomplete="off">
+                <textarea name="messageArea" id="messageForm" rows="15" form="contactMessage" placeholder="Message" autocomplete="off"></textarea>
+                <div>
+                    <button type="submit" name="submitMessage" class="submitMessage" id="submitMessage">Send Message
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <aside class="contactDetails">
+            <div class="contactDetailsContainer">
+                <h3>CONTACT DETAILS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatibus odit corporis error, minima tempora ad cum quidem tenetur voluptas provident, voluptatum, dolores distinctio. Lorem ipsum dolor sit amet.</p>
+                <h4>WORKING HOURS</h4>
+                <p><span>MON - FRI </span>: 08:00am - 05:30pm<br><span>Not working on Saturday and Sunday !</span></p>
+                <h4>CONTACT INFO</h4>
+                <p>A delicious restaurant
+                    <br>Toronto, Ontario
+                    <br>
+                    <br>yum@food.com
+                    <br>
+                    <br>+1 234 567 8910</p>
+            </div>
+
+        </aside>
+    </section>
+
+
+
+    <!-- FRUIT IMAGE -->
+    <section class=" fruitImage "></section>
+
+    <!-- CONTACT, POSTS, SUBSCRIPTION -->
+    <section class="contact">
+        <div class="contactContainer">
+            <div class="contactContent clearfix">
+                <div class="contactInfo">
+                    <h1>DELICIOUS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laudantium iure ipsum possimus numquam molestias eligendi reprehenderit mollitia!</p>
+                    <p>A delicious restaurant
+                        <br>Toronto, Ontario</p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 8910</p>
+                </div>
+                <div class="recentPosts">
+                    <h3>RECENT POSTS</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="subscription">
+                    <h3>SUBSCRIBE NOW</h3>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <form action="POST" class="footerForm signUp clearfix" name="footerForm" id="footerForm">
+                        <input type="email" name="footerEmail" id="footerEmail" autocomplete="off" placeholder="Enter your email ">
+                        <button type="button" name="footerButton" id="footerButton">
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                    </button>
+                    </form>
+                    <ul class="socialMedia clearfix ">
+                        <li>
+                            <a href="https://www.facebook.com/thisishackeryou/ ">
+                                <i class="fab fa-facebook-f "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/hackeryou ">
+                                <i class="fab fa-twitter "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thisishackeryou/?hl=en ">
+                                <i class="fab fa-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="homeFooter ">
+        <div class="homeFooterContainer ">
+            <div class="homeFooterContent ">
+                <p>Copyright &#9400; 2015 by
+                    <span>POLAR</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
