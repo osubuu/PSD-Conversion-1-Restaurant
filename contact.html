@@ -37,13 +37,22 @@
                 </ul>
                 <ul class="navIcons">
                     <li>
-                        <a href="#"><i class="fa fa-shopping-bag"></i></a>
+                        <a href="#">
+                            <i class="fa fa-shopping-bag"></i>
+                        </a>
                         <div>
                             <img class="checkoutNumber" src="assets/images/home-number-item-in-cart.png" alt="number of items in shopping cart">
                         </div>
                     </li>
                     <li>
-                        <i class="fa fa-search"></i>
+                        <form action="POST" class="search" name="search" id="search">
+                            <input type="checkbox" id="toggle" name="toggle" autocomplete="off">
+                            <input type="search" autocomplete="off" placeholder="What are you searching for?">
+                            <button type="submit" style="position: absolute; left: -9999px" /></button>
+                            <label for="toggle">
+                                <i class="fa fa-search"></i>
+                            </label>
+                        </form>
                     </li>
                 </ul>
             </nav>
@@ -56,11 +65,11 @@
             <div class="messageFormContainer">
                 <h3>DROP US A LINE</h3>
                 <div class="clearfix">
-                    <input class="messageName" type="text " name="messageName " id="messageName" placeholder="Your Name" autocomplete="off">
-                    <input class="messageEmail" type="email " name="messageEmail" id="messageEmail" placeholder="Your Email" autocomplete="off">
+                    <input class="messageName" type="text " name="messageName " id="messageName" placeholder="Your Name" autocomplete="off" required>
+                    <input class="messageEmail" type="email" name="messageEmail" id="messageEmail" placeholder="Your Email" autocomplete="off" required>
                 </div>
-                <input class="messageSubject" type="text " name="messageSubject" id="messageSubject" placeholder="Subject" autocomplete="off">
-                <textarea name="messageArea" id="messageForm" rows="15" form="contactMessage" placeholder="Message" autocomplete="off"></textarea>
+                <input class="messageSubject" type="text " name="messageSubject" id="messageSubject" placeholder="Subject" autocomplete="off" required>
+                <textarea name="messageArea" id="messageForm" rows="15" form="contactMessage" placeholder="Message" autocomplete="off" required></textarea>
                 <div>
                     <button type="submit" name="submitMessage" class="submitMessage" id="submitMessage">Send Message
                     <i class="fas fa-long-arrow-alt-right"></i>
@@ -130,8 +139,8 @@
                     <h3>SUBSCRIBE NOW</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="POST" class="footerForm signUp clearfix" name="footerForm" id="footerForm">
-                        <input type="email" name="footerEmail" id="footerEmail" autocomplete="off" placeholder="Enter your email ">
-                        <button type="button" name="footerButton" id="footerButton">
+                        <input type="email" name="footerEmail" id="footerEmail" autocomplete="off" placeholder="Enter your email" required>
+                        <button type="submit" name="footerButton" id="footerButton">
                         <i class="fas fa-long-arrow-alt-right "></i>
                     </button>
                     </form>
