@@ -333,10 +333,9 @@ HEADER
 }
 
 input[type=search]{
-    /* background-color: rgba(0,0,0,0.1); */
     font-family: "Raleway";
     background-color: rgb(242, 242, 242);
-    color: rgb(42, 42, 42);
+    color: rgb(100, 166, 4);
     position: fixed;
     top: 7.5%;
     right: -30%;
@@ -359,7 +358,9 @@ input[type=search]{
 }
 
 input[type=search]::placeholder{
-    color: rgb(25,25,25);
+    opacity: 1;
+    color: rgb(100, 166, 4);
+
     font-weight: 400;
 }
 
@@ -718,7 +719,7 @@ TESTIMONIALS
 .fa-quote-left,
 .fa-quote-right {
     position: absolute;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 175%;
 }
 
@@ -740,7 +741,7 @@ TESTIMONIALS
 .fa-angle-left,
 .fa-angle-right {
     margin: 2%;
-    color: whitesmoke;
+    color: rgb(244,244,244);
     font-size: 150%;
     font-weight: 900;
 }
