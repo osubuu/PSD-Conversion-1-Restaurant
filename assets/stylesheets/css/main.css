@@ -356,7 +356,7 @@ HEADER
     text-align: right;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .headerContainer .navItems li {
@@ -926,6 +926,24 @@ BLOG: HEADER
     background-image: url("../../../assets/images/blog-1.jpeg");
     background-size: cover;
     background-position: center;
+}
+
+.navIcons li:last-child div {
+    position: relative;
+}
+
+.navIcons li:last-child div input {
+    position: absolute;
+    /* display: none; */
+    top: 1em;
+    left: -9.5em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.navIcons li:last-child div input:focus {
+    display: block;
+    color: red;
 }
 
 
