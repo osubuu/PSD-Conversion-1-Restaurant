@@ -1,6 +1,8 @@
 /*
   ============================================================
-   ! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
+   SETUP:
+
+   (! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
 
    and
 
@@ -8,9 +10,9 @@
 
    and
 
-   CLEARFIX
+   CLEARFIX)
 
-   and
+   +
 
    visuallyhidden class for labels (accessibility)
   ============================================================
@@ -349,23 +351,25 @@ HEADER
 }
 
 input[type=search]{
-    font-family: "Raleway";
-    background-color: rgb(242, 242, 242);
-    color: rgb(100, 166, 4);
+    width: 27.5%;
     position: fixed;
     top: 7.5%;
     right: -30%;
     padding: 2% 4% 2% 3%;
     margin:0;
+    background-color: rgb(242, 242, 242);
+    color: rgb(100, 166, 4);
+
+    font-family: "Raleway";
     font-size: 1.8rem;
-    width: 27.5%;
+    text-align: right;
+
     border: 1px solid rgb(71, 71, 71);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    text-align: right;
+
     transition: 0.5s;
     z-index: 10;
-
 
     background-image: url(../../images/search-solid.svg);
     background-repeat: no-repeat;
@@ -376,7 +380,6 @@ input[type=search]{
 input[type=search]::placeholder{
     opacity: 1;
     color: rgb(100, 166, 4);
-
     font-weight: 400;
 }
 
@@ -416,14 +419,15 @@ input#toggle {
     font-size: 1.6rem;
 }
 
-.headerContainer .navItems li {
-    margin-right: 2.5%;
-}
 
 .headerContainer nav ul,
 .headerContainer nav ul li {
     text-align: right;
     display: inline-block;
+}
+
+.navItems li {
+    margin-right: 2.5%;
 }
 
 .navItems li:hover,
@@ -515,17 +519,19 @@ RECIPES
 .recipesContainer h5,
 .commentForm .submitButton {
     font-family: "Raleway";
-    line-height: 2.4rem;
-    font-size: 1.4rem;
-    color: #ffffff;
     font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2.4rem;
+
+    color: #ffffff;
     background-color: #64a604;
+    border: 1px solid #5b9903;
+
     width: 20rem;
     padding: 1em 0;
-    border: 1px solid #5b9903;
-    text-transform: uppercase;
     margin: 0 auto;
-    text-align: center;
 }
 
 .recipesContainer h5:hover,
@@ -1348,7 +1354,7 @@ BLOG: BLOG CONTENT (BLOG COMMENTS)
     color: rgb(100, 166, 4);
 }
 
-.singleRelatedPost .blogImageContainer:hover .relatedPostImgOverlay, .singleRelatedPost .blogImageContainer:hover .relatedPostImgOverlay h3  {
+.singleRelatedPost .blogImageContainer:hover .relatedPostImgOverlay, .singleRelatedPost .blogImageContainer:hover .relatedPostImgOverlay h3 {
     cursor: pointer;
     transition: 0.4s;
     display: inline-block;
