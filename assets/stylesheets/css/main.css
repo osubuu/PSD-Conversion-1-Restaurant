@@ -738,6 +738,10 @@ TESTIMONIALS
     line-height: 3.6rem;
 }
 
+.testimonials p:hover{
+    animation: pop 2s linear 1;
+}
+
 .fa-quote-left,
 .fa-quote-right {
     position: absolute;
