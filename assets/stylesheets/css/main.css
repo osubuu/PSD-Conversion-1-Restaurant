@@ -9,6 +9,10 @@
    and
 
    CLEARFIX
+
+   and
+
+   visuallyhidden class for labels (accessibility)
   ============================================================
 */
 
@@ -259,6 +263,18 @@ template {
     height: 0;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+}
 
 /*
 ============================================================
@@ -1178,9 +1194,9 @@ BLOG: BLOG CONTENT (BLOG RELATED POSTS)
     transform: translateY(-50%);
     margin: 0;
     display: none;
-    color:white;
+    color: rgba(187, 227, 130, 0.8);
     font-size: 1.7rem;
-    text-shadow: -0.15px 0 black, 0 0.15px black, 0.15px 0 black, 0 -0.15px black;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 .singleRelatedPost h4 {
@@ -1338,6 +1354,14 @@ BLOG: BLOG CONTENT (BLOG COMMENTS)
     display: inline-block;
 }
 
+.singleRelatedPost .blogImageContainer:hover{
+    animation: pop 0.2s linear 1;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.02);}
+}
+
 .commentForm input:focus,
 .commentForm textarea:focus {
     transition: 0.3s;
@@ -1419,7 +1443,7 @@ CONTACT: CONTACT INFORMATION
 
 .messageFormContainer input:focus,
 .messageFormContainer textarea:focus {
-    border: 1px solid rgb(221, 237, 154);
+    border: 1px solid #64a604;
 }
 
 .messageFormContainer .messageName,

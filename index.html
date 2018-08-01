@@ -16,7 +16,7 @@
     <!-- For Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
 
-    <title>Delicious Home</title>
+    <title>Delicious: Home</title>
 </head>
 
 <body>
@@ -45,8 +45,8 @@
                     <li>
                         <form action="POST" class="search" name="search" id="search">
                                 <input type="checkbox" id="toggle" name="toggle" autocomplete="off">
-                                <input type="search" autocomplete="off" placeholder="What are you searching for?">
-                                <button type="submit" style="position: absolute; left: -9999px" /></button>
+                                <input type="search" autocomplete="off" placeholder="What are you searching for?" name="search">
+                                <button type="submit" style="position: absolute; left: -9999px"></button>
                                 <label for="toggle"><i class="fa fa-search"></i></label>
                         </form>
                     </li>
@@ -215,6 +215,7 @@
                     <h3>SUBSCRIBE NOW</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="POST" class="footerForm signUp clearfix" name="footerForm" id="footerForm">
+                        <label class="visuallyhidden" for="footerEmail">footerEmail</label>
                         <input type="email" name="footerEmail" id="footerEmail" autocomplete="off" placeholder="Enter your email" required>
                         <button type="submit" name="footerButton" id="footerButton"><i class="fas fa-long-arrow-alt-right "></i></button>
                     </form>

@@ -15,7 +15,7 @@
 
     <!-- For Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
-    <title>Delicious Blog</title>
+    <title>Delicious: Blog</title>
 </head>
 
 <body>
@@ -203,14 +203,21 @@
                     <h3>LEAVE A COMMENT</h3>
                     <h5>Your email address will not be published. Required fields are marked *</h5>
                     <div class="clearfix required ">
+                        <label class="visuallyhidden" for="name">Name</label>
                         <input class="inputRow1 " type="text " name="name " id="blogCommentName " placeholder="Name * " autocomplete="off" required>
+
+                        <label class="visuallyhidden" for="email">Email</label>
                         <input class="inputRow1 " type="email " name="email " id="blogCommentEmail " placeholder="Email * " autocomplete="off" required>
+
+                        <label class="visuallyhidden" for="website">Website</label>
                         <input class="inputRow1 " type="text " name="website " id="blogCommentWebsite " placeholder="Your Website " autocomplete="off">
                     </div>
                     <div>
+                        <label class="visuallyhidden" for="commentArea">Comment Area</label>
                         <textarea name="commentArea " id="commentForm " rows="15 " form="commentMessage " placeholder="Comment " autocomplete="off"></textarea>
                     </div>
-                    <input class="submitButton" type="submit" value="Submit Comment " autocomplete="off" id="submit ">
+                    <label class="visuallyhidden" for="submitButton">Submit Button</label>
+                    <input class="submitButton" name="submitButton" type="submit" value="Submit Comment " autocomplete="off" id="submit ">
                 </form>
             </section>
         </div>
@@ -256,6 +263,7 @@
                     <h3>SUBSCRIBE NOW</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="POST " class="footerForm signUp clearfix " name="footerForm " id="footerForm ">
+                        <label class="visuallyhidden" for="footerEmail">footerEmail</label>
                         <input type="email " name="footerEmail " id="footerEmail " autocomplete="off " placeholder="Enter your email " required>
                         <button type="submit " name="footerButton " id="footerButton ">
                         <i class="fas fa-long-arrow-alt-right "></i>

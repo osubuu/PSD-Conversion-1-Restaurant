@@ -15,7 +15,7 @@
 
     <!-- For Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway" rel="stylesheet">
-    <title>Delicious Contact</title>
+    <title>Delicious: Contact</title>
 </head>
 
 <body>
@@ -65,12 +65,19 @@
             <div class="messageFormContainer">
                 <h3>DROP US A LINE</h3>
                 <div class="clearfix">
+                    <label class="visuallyhidden" for="messageName">Message Name</label>
                     <input class="messageName" type="text " name="messageName " id="messageName" placeholder="Your Name" autocomplete="off" required>
+
+                    <label class="visuallyhidden" for="messageEmail">Message Email</label>
                     <input class="messageEmail" type="email" name="messageEmail" id="messageEmail" placeholder="Your Email" autocomplete="off" required>
                 </div>
+                <label class="visuallyhidden" for="messageSubject">Message Subject</label>
                 <input class="messageSubject" type="text " name="messageSubject" id="messageSubject" placeholder="Subject" autocomplete="off" required>
+
+                <label class="visuallyhidden" for="messageArea">Message Area</label>
                 <textarea name="messageArea" id="messageForm" rows="15" form="contactMessage" placeholder="Message" autocomplete="off" required></textarea>
                 <div>
+                    <label class="visuallyhidden" for="submitMessage">Submit Message</label>
                     <button type="submit" name="submitMessage" class="submitMessage" id="submitMessage">Send Message
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </button>
@@ -139,6 +146,7 @@
                     <h3>SUBSCRIBE NOW</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
                     <form action="POST" class="footerForm signUp clearfix" name="footerForm" id="footerForm">
+                        <label class="visuallyhidden" for="footerEmail">footerEmail</label>
                         <input type="email" name="footerEmail" id="footerEmail" autocomplete="off" placeholder="Enter your email" required>
                         <button type="submit" name="footerButton" id="footerButton">
                         <i class="fas fa-long-arrow-alt-right "></i>
